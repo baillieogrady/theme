@@ -1,6 +1,6 @@
 # Theme
 
-Custom WordPress theme and vite.js setup with live reload.
+Starter WordPress theme using vite.js as a build tool.
 
 ## Installation
 npm i
