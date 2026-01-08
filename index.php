@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 // Include the header
 get_header(); ?>
 
-<main>
+<main class="text-red-500">
     <?php
     if ( have_posts() ) :
         while ( have_posts() ) : the_post();

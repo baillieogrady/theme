@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     host: true,
     hmr: {
-      host: '10.229.39.146', // 🔴 MUST match the IP you use in functions.php
+      host: '10.92.234.146', // 🔴 MUST match the IP you use in functions.php
       protocol: 'ws',
       port: 5173,
     },
@@ -16,9 +16,8 @@ export default defineConfig({
 
   plugins: [
     fullReload([
-      '../*.php',
-      '../template-parts/**/*.php',
-    ]),
+      './**/*.php',
+    ])
   ],
 
   build: {
@@ -27,7 +26,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'assets/js/main.js'),
-        style: path.resolve(__dirname, 'assets/css/style.scss'),
+        style: path.resolve(__dirname, 'assets/css/style.css'),
       },
       output: {
         entryFileNames: '[name].min.js',

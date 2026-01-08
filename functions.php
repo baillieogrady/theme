@@ -11,11 +11,11 @@ function mytheme_enqueue_assets() {
 
     if ( mytheme_is_vite_dev() ) {
 
-        $vite = 'http://10.229.39.146:5173';
+        $vite = 'http://10.92.234.146:5173';
 
         wp_enqueue_script('vite-client', $vite . '/@vite/client', [], null);
         wp_enqueue_script('mytheme-js', $vite . '/js/main.js', [], null, true);
-        wp_enqueue_style('mytheme-style', $vite . '/css/style.scss', [], null);
+        wp_enqueue_style('mytheme-style', $vite . '/css/style.css', [], null);
 
     } else {
 
